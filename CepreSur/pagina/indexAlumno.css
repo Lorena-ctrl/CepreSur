@@ -1,0 +1,74 @@
+
+.bg-per{
+    font-size: 34px;
+    position: relative;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.bg-perA{
+    color: #ff7675;
+    border: 2px solid #ff7675;
+}
+.bg-perB{
+    color: #6b75cf;
+    border: 2px solid #6b75cf;
+}
+.bg-perC{
+    color: #d39e50;
+    border: 2px solid #d39e50;
+}
+
+.bg-per i{
+    font-size: 60px;
+}
+
+.bg-perA::before{
+    background: #ff7675;
+}
+.bg-perB::before{
+    background: #6b75cf;
+}
+.bg-perC::before{
+    background: #d39e50;
+}
+
+.bg-per::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.8s ease;
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.bg-per:hover{
+    color: white;
+}
+.bg-per:hover::before{
+    height: 380%;
+}
+
+.enlace i{
+    font-size: 30px;
+    margin-right:20px;
+    color:#ff7675;
+}
+
+.enlace i:hover{
+    color:#ff75757a;
+}
+
+.logoSidebar{
+    background-color: antiquewhite;
+}
+
+.colorH{
+    background-color: #365CAD;
+}
